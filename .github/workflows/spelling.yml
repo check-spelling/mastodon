@@ -31,7 +31,7 @@ jobs:
     - name: check-spelling
       if: env.MERGE_FAILED != '1'
       id: spelling
-      uses: check-spelling/check-spelling@prerelease
+      uses: jsoref/check-spelling@prerelease
       with:
         experimental_apply_changes_via_bot: 1
         suppress_push_for_open_pull_request: 1
@@ -65,7 +65,7 @@ jobs:
         name: "check-spelling-comment-${{ github.run_id }}"
         path: /tmp/data
     - name: comment
-      uses: check-spelling/check-spelling@prerelease
+      uses: jsoref/check-spelling@prerelease
       with:
         experimental_apply_changes_via_bot: 1
         custom_task: comment
@@ -89,6 +89,6 @@ jobs:
     - name: checkout
       uses: actions/checkout@v2
     - name: check-spelling
-      uses: check-spelling/check-spelling@prerelease
+      uses: jsoref/check-spelling@prerelease
       with:
         experimental_apply_changes_via_bot: 1
