@@ -104,63 +104,63 @@ jobs:
           experimental_apply_changes_via_bot: 1
           use_sarif: ${{ (!github.event.pull_request || (github.event.pull_request.head.repo.full_name == github.repository)) && 1 }}
           extra_dictionary_limit: 10
+          # cspell:ar/src/ayaspell/ar.dic
+          # cspell:bg_BG/src/bg_BG.dic
+          # cspell:ca/src/ca.dic
+          # cspell:cs_CZ/src/Czech.dic
+          # cspell:da_DK/src/hunspell/index.dic
+          # cspell:de_AT/src/hunspell/index.dic
+          # cspell:de_CH/src/hunspell/index.dic
+          # cspell:de_DE/src/German_de_DE.dic
+          # cspell:de_DE/src/hunspell/index.dic
+          # cspell:el/src/hunspell/el-GR.dic
+          # cspell:en_AU/src/aoo-mozilla-en-dict/en_AU.dic
+          # cspell:en_AU/src/aoo-mozilla-en-dict/en_CA.dic
+          # cspell:en_AU/src/hunspell-en_AU-large/en_AU-large.dic
+          # cspell:en_CA/src/aoo-mozilla-en-dict/en_CA.dic
+          # cspell:en_CA/src/hunspell-en_CA-large/en_CA-large.dic
+          # cspell:en_GB/src/aoo-mozilla-en-dict/en-GB.dic
+          # cspell:en_GB/src/hunspell/en_GB.dic
+          # cspell:en_US/src/aoo-mozilla-en-dict/en_US.dic
+          # cspell:en_US/src/hunspell/en_US-large.dic
+          # cspell:eo/eo.dic
           extra_dictionaries:
             cspell:software-terms/dict/softwareTerms.txt
-            cspell:ar/src/ayaspell/ar.dic
-            cspell:bg_BG/src/bg_BG.dic
-            cspell:ca/src/ca.dic
-            cspell:cs_CZ/src/Czech.dic
-            cspell:da_DK/src/hunspell/index.dic
-            cspell:de_AT/src/hunspell/index.dic
-            cspell:de_CH/src/hunspell/index.dic
-            cspell:de_DE/src/German_de_DE.dic
-            cspell:de_DE/src/hunspell/index.dic
-            cspell:el/src/hunspell/el-GR.dic
-            cspell:en_AU/src/aoo-mozilla-en-dict/en_AU.dic
-            cspell:en_AU/src/aoo-mozilla-en-dict/en_CA.dic
-            cspell:en_AU/src/hunspell-en_AU-large/en_AU-large.dic
-            cspell:en_CA/src/aoo-mozilla-en-dict/en_CA.dic
-            cspell:en_CA/src/hunspell-en_CA-large/en_CA-large.dic
-            cspell:en_GB/src/aoo-mozilla-en-dict/en-GB.dic
-            cspell:en_GB/src/hunspell/en_GB.dic
-            cspell:en_US/src/aoo-mozilla-en-dict/en_US.dic
-            cspell:en_US/src/hunspell/en_US-large.dic
-            cspell:eo/eo.dic
             cspell:es_ES/src/hunspell/index.dic
-            cspell:et-EE/src/index.dic
-            cspell:eu/src/basque_hunspell/eu.dic
-            cspell:fa_IR/hunspell/fa-IR.dic
-            cspell:fr_FR/src/hunspell-french-dictionaries-v7.0/fr-classique.dic
-            cspell:fr_FR/src/hunspell-french-dictionaries-v7.0/fr-reforme1990.dic
-            cspell:fr_FR/src/hunspell-french-dictionaries-v7.0/fr-toutesvariantes.dic
-            cspell:fr_FR_90/src/hunspell-french-dictionaries-v7.0/fr-classique.dic
-            cspell:fr_FR_90/src/hunspell-french-dictionaries-v7.0/fr-reforme1990.dic
-            cspell:fr_FR_90/src/hunspell-french-dictionaries-v7.0/fr-toutesvariantes.dic
-            cspell:he/hunspell/he.dic
-            cspell:hr_HR/src/hr_HR.dic
-            cspell:it_IT/src/hunspell/index.dic
-            cspell:lt_LT/lt_LT.dic
-            cspell:nb_NO/src/nb.dic
-            cspell:nl_NL/src/hunspell/index.dic
-            cspell:pl_PL/pl_pl.dic
-            cspell:pt_BR/src/hunspell/index.dic
-            cspell:pt_PT/Portuguese-European.dic
-            cspell:ro_RO/src/hunspell/index.dic
-            cspell:ru_RU/src/Russian.dic
-            cspell:ru_RU/src/hunspell/index.dic
-            cspell:ru_RU/src/ru_ru.dic
-            cspell:ru_RU/src/russian-aot.dic
-            cspell:sk_SK/src/Slovak.dic
-            cspell:sl_SI/src/sl_SI.dic
-            cspell:sr_Cyrl/src/sr.dic
-            cspell:sr_Latn/src/sr-Latn.dic
-            cspell:sv/src/hunspell/index.dic
-            cspell:sv/src/ooo-swedish-dict-2-42/dictionaries/sv_FI.dic
-            cspell:sv/src/ooo-swedish-dict-2-42/dictionaries/sv_SE.dic
-            cspell:sv/src/open-office-2008/Swedish.dic
-            cspell:tr_TR/Turkish.dic
-            cspell:uk_UA/src/hunspell/index.dic
-            cspell:vi_VN/vi.dic
+          # cspell:et-EE/src/index.dic
+          # cspell:eu/src/basque_hunspell/eu.dic
+          # cspell:fa_IR/hunspell/fa-IR.dic
+          # cspell:fr_FR/src/hunspell-french-dictionaries-v7.0/fr-classique.dic
+          # cspell:fr_FR/src/hunspell-french-dictionaries-v7.0/fr-reforme1990.dic
+          # cspell:fr_FR/src/hunspell-french-dictionaries-v7.0/fr-toutesvariantes.dic
+          # cspell:fr_FR_90/src/hunspell-french-dictionaries-v7.0/fr-classique.dic
+          # cspell:fr_FR_90/src/hunspell-french-dictionaries-v7.0/fr-reforme1990.dic
+          # cspell:fr_FR_90/src/hunspell-french-dictionaries-v7.0/fr-toutesvariantes.dic
+          # cspell:he/hunspell/he.dic
+          # cspell:hr_HR/src/hr_HR.dic
+          # cspell:it_IT/src/hunspell/index.dic
+          # cspell:lt_LT/lt_LT.dic
+          # cspell:nb_NO/src/nb.dic
+          # cspell:nl_NL/src/hunspell/index.dic
+          # cspell:pl_PL/pl_pl.dic
+          # cspell:pt_BR/src/hunspell/index.dic
+          # cspell:pt_PT/Portuguese-European.dic
+          # cspell:ro_RO/src/hunspell/index.dic
+          # cspell:ru_RU/src/Russian.dic
+          # cspell:ru_RU/src/hunspell/index.dic
+          # cspell:ru_RU/src/ru_ru.dic
+          # cspell:ru_RU/src/russian-aot.dic
+          # cspell:sk_SK/src/Slovak.dic
+          # cspell:sl_SI/src/sl_SI.dic
+          # cspell:sr_Cyrl/src/sr.dic
+          # cspell:sr_Latn/src/sr-Latn.dic
+          # cspell:sv/src/hunspell/index.dic
+          # cspell:sv/src/ooo-swedish-dict-2-42/dictionaries/sv_FI.dic
+          # cspell:sv/src/ooo-swedish-dict-2-42/dictionaries/sv_SE.dic
+          # cspell:sv/src/open-office-2008/Swedish.dic
+          # cspell:tr_TR/Turkish.dic
+          # cspell:uk_UA/src/hunspell/index.dic
+          # cspell:vi_VN/vi.dic
           ignore-pattern: '[^\p{Ll}\p{Lm}\p{Lt}\p{Lu}]'
           upper-pattern: '[\p{Lu}\p{Lt}\p{Lm}]'
           lower-pattern: '[\p{Ll}\p{Lm}]'
