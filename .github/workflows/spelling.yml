@@ -104,8 +104,9 @@ jobs:
           experimental_apply_changes_via_bot: 1
           use_sarif: ${{ (!github.event.pull_request || (github.event.pull_request.head.repo.full_name == github.repository)) && 1 }}
           extra_dictionary_limit: 10
-          extra_dictionaries: cspell:software-terms/dict/softwareTerms.txt
-          check_extra_dictionaries: cspell:ar/src/ayaspell/ar.dic
+          extra_dictionaries:
+            cspell:software-terms/dict/softwareTerms.txt
+            cspell:ar/src/ayaspell/ar.dic
             cspell:bg_BG/src/bg_BG.dic
             cspell:ca/src/ca.dic
             cspell:cs_CZ/src/Czech.dic
@@ -166,6 +167,8 @@ jobs:
           not-lower-pattern: '[^\p{Ll}\p{Lm}]'
           not-upper-or-lower-pattern: '[^\p{Lu}\p{Lt}\p{Lm}]'
           punctuation-pattern: "'"
+          disable_checks: noisy-file
+          debug: 1
 
   update:
     name: Update PR
